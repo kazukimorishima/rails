@@ -1,0 +1,9 @@
+<h1>投稿</h1>
+<hr>
+<P><%= @post.name %></P>
+<P><%= @post.content %></P>
+<P><%= @post.place %></P>
+<hr>
+<p><a href="/posts" class="btn btn-info">トップに戻る</a></p>
+<p><a href="/posts/<%= @post.id %>/edit" class="btn btn-success">投稿を編集する</a></p>
+<p><a href="/posts/<%= @post.id %>" data-method="delete" class="btn btn-danger">投稿を削除する</a></p>
